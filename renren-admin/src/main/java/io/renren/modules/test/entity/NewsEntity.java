@@ -1,0 +1,40 @@
+package io.renren.modules.test.entity;
+
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.util.Date;
+
+/**
+ * 新闻
+ * 
+ * @author Mark
+ * @email sunlightcs@gmail.com
+ * @date 2019-08-02 08:08:21
+ */
+@Data
+@TableName("news")
+public class NewsEntity implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * 
+	 */
+	@TableId
+	private Integer id;
+	/**
+	 * 新闻名称
+	 */
+	private String newsName;
+	/**
+	 * 新闻内容
+	 */
+	private String newsNotes;
+	/**
+	 * 新闻图片
+	 */
+	private String newsPic;
+
+}
